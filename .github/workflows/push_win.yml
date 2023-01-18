@@ -33,6 +33,7 @@ jobs:
         pip install -e '.[test]'
     - name: Install Tox
       run: pip install tox
-    - name: pytest
-      run: pytest
-
+    - name: Run Test One Input
+      run: python tests/accept_input.py
+    - name: Run Test Multi Input
+      run: python tests/accept_input4.py
