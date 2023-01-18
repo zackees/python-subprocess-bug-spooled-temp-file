@@ -17,7 +17,7 @@ def to_stream(input: str) -> SpooledTemporaryFile:
 
 class Tester(unittest.TestCase):
 
-    def fail(self):
+    def test_fail(self):
         """This test passes on windows and linux but fails on macos"""
         p = subprocess.Popen(
             "python accept_input.py",
@@ -31,7 +31,7 @@ class Tester(unittest.TestCase):
         stdout = p.stdout.read()
         self.assertIn("OK", stdout)
 
-    def fail4(self):
+    def test_fail4(self):
         """This test passes on windows and linux but fails on macos"""
         p = subprocess.Popen(
             "python accept_input4.py",
