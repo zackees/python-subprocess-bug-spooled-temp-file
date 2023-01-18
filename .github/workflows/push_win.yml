@@ -30,9 +30,7 @@ jobs:
         restore-keys: install-
     - name: Install dependencies
       run: |
-        pip install -e '.[test]'
-    - name: Install Tox
-      run: pip install tox
+        pip install -e '.'
     - name: Run Test One Input
       run: python tests/accept_input.py
     - name: Run Test Multi Input
