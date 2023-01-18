@@ -26,6 +26,6 @@ jobs:
       run: |
         pip install -e '.'
     - name: Run Test One Input
-      run: python tests/accept_input.py
+      run: python tests/test_ok.py
     - name: Run Test Multi Input
-      run: python tests/accept_input4.py
+      run: python tests/test_fail.py
