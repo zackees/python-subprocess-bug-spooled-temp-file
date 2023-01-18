@@ -7,13 +7,13 @@ from tempfile import SpooledTemporaryFile
 import subprocess
 
 
-HERE = Path(os.path.dirname(__file__))
+HERE = os.path.dirname(__file__)
 
 class Tester(unittest.TestCase):
     def test_ok(self):
         """This test passes on windows, linux and macos"""
         from tempfile import TemporaryFile
-        with TemporaryFile(HERE / "in4.txt") as stream:
+        with TemporaryFile(os.path.join(HERE, "in4.txt")) as stream:
             p = subprocess.Popen(
                 "python accept_input.py",
                 cwd=HERE,
