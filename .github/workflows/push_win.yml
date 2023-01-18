@@ -30,6 +30,6 @@ jobs:
         restore-keys: install-
     - name: Install dependencies
       run: |
-        pip install -e '.'
+        pip install -e .
     - name: Run Test OK
       run: python tests/test_ok.py
