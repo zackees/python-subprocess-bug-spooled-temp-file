@@ -1,9 +1,5 @@
-# flake8: noqa: E501
-
 import unittest
 import os
-from pathlib import Path
-from tempfile import SpooledTemporaryFile
 import subprocess
 
 

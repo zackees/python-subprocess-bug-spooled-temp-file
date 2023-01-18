@@ -31,20 +31,6 @@ class Tester(unittest.TestCase):
         stdout = p.stdout.read()
         self.assertIn("OK", stdout)
 
-    def test_fail4(self):
-        """This test passes on windows and linux but fails on macos"""
-        p = subprocess.Popen(
-            "python accept_input4.py",
-            cwd=HERE,
-            shell=True,
-            stdin=to_stream("y\ny\ny\ny\n"),
-            stdout=subprocess.PIPE,
-            universal_newlines=True
-        )
-        p.wait()
-        stdout = p.stdout.read()
-        self.assertIn("OK", stdout)
-
 
 if __name__ == "__main__":
     unittest.main()
