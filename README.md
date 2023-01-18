@@ -13,7 +13,7 @@ Tests with a spooled file
 
 # Summary
 
-Subprocess cannot use a spooled temporary file to use as an input stream. The setup is very straightfoward: a sub script waits pauses for input then continues when it sees that input.
+Subprocess cannot use a spooled temporary file to use as an input stream. The setup is very straightfoward: a sub script waits pauses for input then continues when it sees that input. This is an example of the failing test.
 
 ```python
 # flake8: noqa: E501
