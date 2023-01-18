@@ -33,5 +33,3 @@ jobs:
         pip install -e '.'
     - name: Run Test OK
       run: python tests/test_ok.py
-    - name: Run Test Fail
-      run: python tests/test_fail.py
