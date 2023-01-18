@@ -18,7 +18,7 @@ def to_stream(input: str) -> SpooledTemporaryFile:
 class Tester(unittest.TestCase):
 
     def test_fail(self):
-        """This test passes on windows and linux but fails on macos"""
+        """Should this test pass?"""
         p = subprocess.Popen(
             "python accept_input.py",
             cwd=HERE,
